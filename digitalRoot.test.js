@@ -12,4 +12,8 @@ describe("digitalRoot", () => {
   it("returns the sum of a double digit input", () => {
     expect(digitalRoot(24)).toEqual(6);
   });
+
+  it("returns the sum of multiple when their sum is a single digit", () => {
+    expect(digitalRoot(111)).toEqual(3);
+  });
 });
