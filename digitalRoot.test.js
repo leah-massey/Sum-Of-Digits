@@ -18,6 +18,10 @@ describe("digitalRoot", () => {
   });
 
   it("continues to reduce the number by adding digits together until sum is a single digit", () => {
-    expect(digitalRoot(132189)).toEqual(6);
+    expect(digitalRoot(493193)).toEqual(2);
+  });
+
+  it("returns an error if input not a number", () => {
+    expect(() => digitalRoot("23")).toThrow("Argument must be in a number.");
   });
 });
