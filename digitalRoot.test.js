@@ -16,4 +16,8 @@ describe("digitalRoot", () => {
   it("returns the sum of multiple when their sum is a single digit", () => {
     expect(digitalRoot(111)).toEqual(3);
   });
+
+  it("continues to reduce the number by adding digits together until sum is a single digit", () => {
+    expect(digitalRoot(132189)).toEqual(6);
+  });
 });
