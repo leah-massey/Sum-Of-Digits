@@ -1,5 +1,5 @@
-const digitalRoot = function () {
-  return 7;
+const digitalRoot = function (value) {
+  return value;
 };
 
 module.exports = digitalRoot;
