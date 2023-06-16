@@ -8,4 +8,8 @@ describe("digitalRoot", () => {
   it("returns the inputted number if single digit inputted", () => {
     expect(digitalRoot(5)).toEqual(5);
   });
+
+  it("returns the sum of a double digit input", () => {
+    expect(digitalRoot(24)).toEqual(6);
+  });
 });
